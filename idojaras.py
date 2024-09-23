@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = 'd8ad46ddbb6073a3ed85afc65b4e7830'
+API_KEY = 'API_KEY'
 CITY = input("Add meg a város nevét (pl. Budapest): ")
 
 def fetch_weather_data(city):
@@ -20,7 +20,6 @@ def fetch_weather_data(city):
         return None, None
 
 # Új adatok lekérése az API-tól
-print("Új adatok lekérése az API-tól...")
 current_weather, forecast = fetch_weather_data(CITY)
 
 if current_weather and forecast:
